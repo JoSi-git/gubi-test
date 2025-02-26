@@ -1,4 +1,4 @@
-# 🚀 **Projektplan: Software-Migration auf Moodle mit Docker**
+# 🚀 **Projektplan: Migration: Moodle auf Docker**
 
 ## 📌 1. Projektübersicht
 
