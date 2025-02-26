@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "13229e5b0843d084",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "673a86b3cbca34cb",
+        "id": "354487d166de5c48",
         "type": "tabs",
         "children": [
           {
-            "id": "691030b3a1286d99",
+            "id": "bc40c047ac94afa2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "eae32f1763a1f2d3",
+    "id": "55a3843df6567408",
     "type": "split",
     "children": [
       {
-        "id": "1ba541dbe21ee9c3",
+        "id": "a053390a912daf3d",
         "type": "tabs",
         "children": [
           {
-            "id": "3f7c99048fffb84b",
+            "id": "0ad6b72619b5f3e8",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,17 @@
             }
           },
           {
-            "id": "f86a9a1984a52c4b",
+            "id": "7218c1d789978af1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "a3c30f4e6a1b8f27",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -63,38 +73,28 @@
               "icon": "lucide-search",
               "title": "Search"
             }
-          },
-          {
-            "id": "da93202010e53769",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 256.5
   },
   "right": {
-    "id": "5d4fbcfbb2c7b8b0",
+    "id": "a06b23c05ee26b9f",
     "type": "split",
     "children": [
       {
-        "id": "bbf6913e36923983",
+        "id": "d46b5d169113615a",
         "type": "tabs",
         "children": [
           {
-            "id": "329795f4e5ce4ddc",
+            "id": "7d1c40e2711e5d6a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fragebogen zur Anforderungsanalyse.md",
+                "file": "M169/M169-Aufgaben.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,32 +104,32 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Fragebogen zur Anforderungsanalyse"
+              "title": "Backlinks for M169-Aufgaben"
             }
           },
           {
-            "id": "c4f1ee428df944ee",
+            "id": "c9ac61ed28b96891",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fragebogen zur Anforderungsanalyse.md",
+                "file": "Home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Fragebogen zur Anforderungsanalyse"
+              "title": "Outgoing links from Home"
             }
           },
           {
-            "id": "6f8412ae1ccf79d6",
+            "id": "74dc292a4560c6c1",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
@@ -137,40 +137,117 @@
             }
           },
           {
-            "id": "d5c37502c852b82b",
+            "id": "8f1d7b176de289b3",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fragebogen zur Anforderungsanalyse.md",
+                "file": "Mathe/Home.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Fragebogen zur Anforderungsanalyse"
+              "title": "Outline of Home"
+            }
+          },
+          {
+            "id": "be0339cd6e770fc2",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "d490a49e687e0dc1",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "4967a3ab269c491c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "05298d70d25ebe9c",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "audio-recorder:Start/stop recording": false,
+      "graph:Open graph view": false,
+      "obsidian-git:Open Git source control": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "691030b3a1286d99",
+  "active": "bc40c047ac94afa2",
   "lastOpenFiles": [
     "README.md",
-    "Fragebogen zur Anforderungsanalyse.md"
+    "Fragebogen zur Anforderungsanalyse.md",
+    "JoSi Home.md",
+    "Mathe/Zusammenfassung.md",
+    "Projekte/Projektübersicht.md",
+    "JoSi Mindmap.canvas",
+    "Projekte",
+    "M143/6.1 Grosse Datenmengen speichern.md",
+    "M143/5.2 SAN mit iSCSI.md",
+    "M143/4.2 Speichervorgang berechnen.md",
+    "Englisch/Englisch Präsentation.md",
+    "Englisch/Englisch Wörtli Test.md",
+    "Bilder/Pasted image 20250212083156.png",
+    "Untitled.canvas",
+    "Mathe/Aufgaben.md",
+    "Home",
+    "M143/1.4 DSG und DSV.md",
+    "M143/2.1 Gefahren und Massnahmen.md",
+    "M143/4.1 Datenmenge berechnen.md",
+    "M169/M169-Aufgaben.md",
+    "M158/M158-Aufgaben.md",
+    "2025-02-15.md",
+    "Untitled Diagram.svg",
+    "Untitled Diagram 1.svg",
+    "2025-02-13.md",
+    "Notes/2025-02-13.md",
+    "2024-02-13.md",
+    "Untitled.md",
+    "Notes",
+    "Recording 20250213102408.m4a",
+    "M143/M143-Aufgaben.md",
+    "M143/1.2 Aufbewahrungsfristen.md",
+    "Mathe",
+    "Untitled/desktop.ini",
+    "Bilder",
+    "Pasted image 20250212083112.png",
+    "Englisch",
+    "M143",
+    "M158"
   ]
 }
