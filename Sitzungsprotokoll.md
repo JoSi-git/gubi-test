@@ -76,7 +76,6 @@ in doku konzept für backup erstellen
 | Datenmigration               | Alle bestehenden Daten (Kurse, Benutzer, Dateien, Konfigurationen) müssen übernommen werden.                                             | ✅          |                  |
 | Portzuweisung                | Die alte Moodle-Instanz soll unter **Port 8080** weiterhin verfügbar bleiben, während die neue Instanz unter **Port 80** erreichbar ist. | ✅          |                  |
 | Eigenes Docker-Image         | Es soll ein eigenes Docker-Image für Moodle verwendet werden.                                                                            | ✅          |                  |
-| Testmigration                | Möglichkeit zur **Testmigration** vor der finalen Umsetzung.                                                                             | ✅          |                  |
 | Backup-Konzept               | Einfaches Backup-Konzept zur Sicherung der Daten in der Container-Lösung.                                                                |            | ✅                |
 | Server-Ressourcen            | Keine Einschränkungen bei der Wahl der Server-Ressourcen.                                                                                |            | ✅                |
 | Dokumentation                | Konzept für Backup, Migration und Tests muss in der Dokumentation beschrieben werden.                                                    |            | ✅                |
