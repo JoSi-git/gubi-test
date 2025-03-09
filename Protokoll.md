@@ -1,4 +1,5 @@
-J: "Gibt es spezifische Anforderungen an die neue Moodle Version, was muss die neue Version über der alten erfüllen oder ist es einfach nur ein Upgrade der Software?"
+J: "Gibt es spezifische Anforderungen an die neue Moodle Version, was muss die neue Version 
+über der alten erfüllen oder ist es einfach nur ein Upgrade der Software?"
 Luxi: "Es hat Die Veraltete Version in der VM Die ich Ihnen Bereitstelle, Wichtig, dass es wirklich die neueste Version von Moodle ist und auch wirklich alle Daten bestehen von der alten, alle User können sich wie gehabt einloggen, gleich viel rechte haben und noch alle kürze haben.
 Was auch noch wichtig ist, dass das ganz in einer Container Lösung laufen sollte, die Alte Version ist ganz einfach ein Apache Webserver, eine MYSQL Datenbank und ein PHP fix auf der Maschine.
 **Nun hätte ich gerne auf der neuen wie zwei Container, zum einten der Webserver und PHP, der Zweite ist dann die Datenbank**"
