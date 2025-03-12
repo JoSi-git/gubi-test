@@ -1,7 +1,4 @@
 # 🚀 **Projektplan: Migration: Moodle auf Docker**
-
-## 📌 1. Projektübersicht
-
 ### 🔍 1.1 Ausgangslage
 
 Eine ältere Moodle-Instanz muss auf die aktuelle Version als Docker-Container migriert werden, inklusive aller Daten. Dies erfolgt im Rahmen des Modulprojekts und wird in mehreren Schritten durchgeführt.
@@ -13,23 +10,11 @@ Eine ältere Moodle-Instanz muss auf die aktuelle Version als Docker-Container m
 ✅ Dokumentation der Migration  
 ✅ Durchführung eines Abnahmetests und Präsentation der Ergebnisse
 
----
 
-## 📆 2. Projektstruktur
+## ✅ 4. Milestones
 
-### 🔖 2.1 Meilensteine
-
-| 🚀 Meilenstein     | 📋 Beschreibung                                        | ⏳ Deadline |
-| ------------------ | ------------------------------------------------------ | ---------- |
-| 🛠 Initialisierung | Erstellung des Projektauftrags und Anforderungsanalyse | [Datum]    |
-| 📜 Konzept         | Ausarbeitung des Migrationsplans                       | [Datum]    |
-| 🏗 Realisierung    | Umsetzung der Migration und Testdurchführung           | [Datum]    |
-| ✅ Einführung       | Abschluss, Abnahmetest und Präsentation                | [Datum]    |
-
-## ✅ 4. To-Do-Liste
-
-- [ ]  📌 Anforderungen mit der Lehrperson klären
-- [ ]  📑 Lastenheft erstellen
+- [x]  📌 Anforderungen mit der Lehrperson klären
+- [x]  📑 Lastenheft erstellen
 - [ ]  📜 Migrationskonzept ausarbeiten
 - [ ]  🖥 Testumgebung vorbereiten
 - [ ]  🔄 Migration durchführen
@@ -37,18 +22,7 @@ Eine ältere Moodle-Instanz muss auf die aktuelle Version als Docker-Container m
 - [ ]  📝 Abschlussdokumentation verfassen
 - [ ]  🎤 Präsentation vorbereiten
 
-## 👥 5. Arbeitsteilung
 
-| 🏗 Aufgabe                 | 🏅 Verantwortlicher |
-| -------------------------- | ------------------- |
-| 📌 Anforderungsanalyse     | ✍️ _David_          |
-| 📜 Migrationsplanung       | ✍️ _Jonas_          |
-| 🖥 Umsetzung der Migration | ✍️ _Silas_          |
-| 🛠 Testdurchführung        | ✍️ _David_          |
-| 📝 Dokumentation           | ✍️ _Silas_          |
-| 🎤 Präsentation            | ✍️ _Jonas_          |
-
----
 ## 🛣 3. Roadmap
 
 ```mermaid
