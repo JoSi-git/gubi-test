@@ -1,2 +1,4 @@
+# .env Datei ignorieren
+scripts/.env
 # Obsidian Konfigurationsdateien ignorieren
 .obsidian/

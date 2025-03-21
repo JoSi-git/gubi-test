@@ -1,6 +1,9 @@
 # 🚀 **Projektplan: Migration: Moodle auf Docker**
 
-## 📌 1. Projektübersicht
+[![Silas Gubler](https://img.shields.io/badge/Silas_Gubler-FF7F50?style=for-the-badge)](https://github.com/arkaizn)
+[![David Kästli](https://img.shields.io/badge/David_Kästli-00FA9A?style=for-the-badge)](https://github.com/dka-stat)
+[![Jonas Sieber](https://img.shields.io/badge/Jonas_Sieber-4682B4?style=for-the-badge)](https://github.com/josi-git)
+[![Lizenz](https://img.shields.io/badge/Lizenz-DAA520?style=for-the-badge)](https://github.com/JoSi-git/m346/blob/main/LICENSE)  
 
 ### 🔍 1.1 Ausgangslage
 
@@ -13,23 +16,11 @@ Eine ältere Moodle-Instanz muss auf die aktuelle Version als Docker-Container m
 ✅ Dokumentation der Migration  
 ✅ Durchführung eines Abnahmetests und Präsentation der Ergebnisse
 
----
 
-## 📆 2. Projektstruktur
+## ✅ 4. Milestones
 
-### 🔖 2.1 Meilensteine
-
-| 🚀 Meilenstein     | 📋 Beschreibung                                        | ⏳ Deadline |
-| ------------------ | ------------------------------------------------------ | ---------- |
-| 🛠 Initialisierung | Erstellung des Projektauftrags und Anforderungsanalyse | [Datum]    |
-| 📜 Konzept         | Ausarbeitung des Migrationsplans                       | [Datum]    |
-| 🏗 Realisierung    | Umsetzung der Migration und Testdurchführung           | [Datum]    |
-| ✅ Einführung       | Abschluss, Abnahmetest und Präsentation                | [Datum]    |
-
-## ✅ 4. To-Do-Liste
-
-- [ ]  📌 Anforderungen mit der Lehrperson klären
-- [ ]  📑 Lastenheft erstellen
+- [x]  📌 Anforderungen mit der Lehrperson klären
+- [x]  📑 Lastenheft erstellen
 - [ ]  📜 Migrationskonzept ausarbeiten
 - [ ]  🖥 Testumgebung vorbereiten
 - [ ]  🔄 Migration durchführen
@@ -37,18 +28,7 @@ Eine ältere Moodle-Instanz muss auf die aktuelle Version als Docker-Container m
 - [ ]  📝 Abschlussdokumentation verfassen
 - [ ]  🎤 Präsentation vorbereiten
 
-## 👥 5. Arbeitsteilung
 
-| 🏗 Aufgabe                 | 🏅 Verantwortlicher |
-| -------------------------- | ------------------- |
-| 📌 Anforderungsanalyse     | ✍️ _David_          |
-| 📜 Migrationsplanung       | ✍️ _Jonas_          |
-| 🖥 Umsetzung der Migration | ✍️ _Silas_          |
-| 🛠 Testdurchführung        | ✍️ _David_          |
-| 📝 Dokumentation           | ✍️ _Silas_          |
-| 🎤 Präsentation            | ✍️ _Jonas_          |
-
----
 ## 🛣 3. Roadmap
 
 ```mermaid
