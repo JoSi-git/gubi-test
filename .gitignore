@@ -1,4 +1,6 @@
-# .env Datei ignorieren
-scripts/.env
 # Obsidian Konfigurationsdateien ignorieren
 .obsidian/
+
+scripts/Docker/moodle/*
+scripts/Docker/moodledata/*
+scripts/Docker/db_data/*
