@@ -10,3 +10,14 @@ git clone -b MOODLE_403_STABLE https://github.com/moodle/moodle.git ./moodle
 cd ./Docker
 docker compose up -d
 
+# mysql dump
+mysqldump -u root -p moodle > moodle.sql
+
+
+# test
+docker cp moodle.sql moodle-db:/moodle.sql
+
+docker exec -it moodle-db bash
+mysql -u root -p moodle < /moodle.sql
+
+
