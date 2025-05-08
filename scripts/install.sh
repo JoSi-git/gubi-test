@@ -1,4 +1,5 @@
 #!/bin/bash
+source .env
 # create volume folders
 mkdir ./scripts/Docker/moodle
 mkdir ./scripts/Docker/moodledata
