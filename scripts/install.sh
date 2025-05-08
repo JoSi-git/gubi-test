@@ -12,7 +12,7 @@ cd ./Docker
 docker compose up -d
 
 # mysql dump
-mysqldump -u root -p moodle > moodle.sql
+mysqldump -u root -p"mysql-root-password" moodle > moodle.sql
 
 
 # test
