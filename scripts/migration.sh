@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # ================== VARIABLEN ===================
-MOODLE_DIR="/var/www/moodle"
-MOODLEDATA_DIR="/var/moodledata"
+MOODLE_DIR="/var/www/html"
+MOODLEDATA_DIR="/var/www/moodledata"
 BACKUP_DIR="/root/moodle-backup-$(date +%F_%H-%M)"
 DB_NAME="moodle"
 DB_USER="root"
