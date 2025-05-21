@@ -13,7 +13,7 @@ RUN apt-get update && \
 # Moodle klonen (Branch anpassen nach Bedarf)
 RUN git clone --branch MOODLE_401_STABLE https://github.com/moodle/moodle.git /var/www/html
 
-COPY COPY config.php /var/www/html/config.php
+COPY config.php /var/www/html/config.php
 
 # Besitz- und Rechtevergabe
 RUN chown -R www-data:www-data /var/www/html \
