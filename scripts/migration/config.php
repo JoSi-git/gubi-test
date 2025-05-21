@@ -1,9 +1,9 @@
 <?php  // Moodle configuration file
- 
+
 unset($CFG);
 global $CFG;
 $CFG = new stdClass();
- 
+
 $CFG->dbtype    = 'mariadb';
 $CFG->dblibrary = 'native';
 $CFG->dbhost    = 'db'; // Docker service name
@@ -17,11 +17,11 @@ $CFG->dboptions = array (
   'dbsocket' => '',
   'dbcollation' => 'utf8mb4_unicode_ci',
 );
- 
+
 $CFG->wwwroot   = 'http://localhost:8088';
 $CFG->dataroot  = '/var/www/html';
 $CFG->admin     = 'admin';
- 
+
 $CFG->directorypermissions = 0777;
- 
+
 require_once(__DIR__ . '/lib/setup.php');

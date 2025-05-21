@@ -48,7 +48,7 @@ cp "$SCRIPT_DIR/migration/config.php" "$INSTALL_DIR/"
 # Moodle migration
 
 # Mysql dump
-mysqldump -u root -p$MYSQL_ROOT_PASSWORD > $INSTALL_DIR/dumps/moodle_backup.sql
+mysqldump -u root -p"$MYSQL_ROOT_PASSWORD" "moodle" > $INSTALL_DIR/dumps/moodle_backup.sql
 
 # Copy moodledata
 cp -r /var/www/moodledata $INSTALL_DIR
