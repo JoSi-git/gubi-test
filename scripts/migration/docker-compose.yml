@@ -13,6 +13,8 @@ services:
     volumes:
       - db_data:/var/lib/mysql
       - ./dumps:/docker-entrypoint-initdb.d
+    networks:
+      - moodle-net
 
   moodle:
     build: .
@@ -25,8 +27,12 @@ services:
       PHP_INI-post_max_size: ${PHP_INI_post_max_size}
     depends_on:
       - db
-    network
-
+    networks:
+      - moodle-net
 
 volumes:
   db_data:
+
+networks:
+  moodle-net:
+    driver: bridge
