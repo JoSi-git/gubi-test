@@ -1,7 +1,20 @@
 FROM moodlehq/moodle-php-apache:8.3
 
+# System-Paketliste aktualisieren und nötige Tools installieren
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+      git \
+      wget \
+      unzip \
+      zip \
+      ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
 
+# Moodle klonen (Branch anpassen nach Bedarf)
+RUN git clone --branch MOODLE_403_STABLE https://github.com/moodle/moodle.git /var/www/html
 
-# Berechtigungen setzen
+# Besitz- und Rechtevergabe
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
+
+# (Optional) Env-Variablen, weitere Konfiguration, etc.
