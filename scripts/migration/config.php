@@ -18,7 +18,7 @@ $CFG->dboptions = array (
   'dbcollation' => 'utf8mb4_unicode_ci',
 );
 
-$CFG->wwwroot   = 'http://localhost:8088';
+$CFG->wwwroot   = 'http://localhost:80';
 $CFG->dataroot  = '/var/www/html';
 $CFG->admin     = 'admin';
 
