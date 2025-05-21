@@ -41,6 +41,8 @@ cp "$SCRIPT_DIR/migration/docker-compose.yml" "$INSTALL_DIR/"
 cp "$SCRIPT_DIR/migration/Dockerfile" "$INSTALL_DIR/"
 cp "$SCRIPT_DIR/migration/.env" "$INSTALL_DIR/"
 cp "$SCRIPT_DIR/migration/config.php" "$INSTALL_DIR/"
+cp "$SCRIPT_DIR/migration/php.ini" "$INSTALL_DIR/"
+
 
 
 # Clone Moodle repository
