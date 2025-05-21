@@ -18,6 +18,15 @@ mkdir -p "$INSTALL_DIR/logs/moodle"
 mkdir -p "$INSTALL_DIR/logs/apache"
 mkdir -p "$INSTALL_DIR/logs/mariadb"
 
+print_cmsg() {
+  if [[ "$1" == "-n" ]]; then
+    shift
+    echo -ne "\e[1m$*\e[0m"
+  else
+    echo -e "\e[1m$*\e[0m"
+  fi
+}
+
 if [[ -f "$ENV_FILE" ]]; then
     source "$ENV_FILE"
     print_cmsg ".env file found and loaded." | tee -a "$LOG_FILE"
@@ -33,8 +42,6 @@ cp "$SCRIPT_DIR/migration/Dockerfile" "$INSTALL_DIR/"
 cp "$SCRIPT_DIR/migration/.env" "$INSTALL_DIR/"
 
 # Clone Moodle repository
-print_cmsg "Cloning Moodle repository..." | tee -a "$LOG_FILE"
-git clone -b MOODLE_311_STABLE https://github.com/moodle/moodle.git "$INSTALL_DIR/moodle"
 
 # Moodle migration
 
