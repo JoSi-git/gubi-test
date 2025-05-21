@@ -15,7 +15,12 @@ RUN git clone --branch MOODLE_401_STABLE https://github.com/moodle/moodle.git /v
 
 COPY config.php /var/www/html/config.php
 
+RUN sed -ri 's@(Directory /var/www/html>.*)AllowOverride None@\1AllowOverride All@' \
+      /etc/apache2/apache2.conf \
+ && sed -ri 's@(#ServerName).*@\1 localhost@' /etc/apache2/apache2.conf
+
 # Besitz- und Rechtevergabe
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 /var/www/html
+RUN chown -R www-data:www-data /var/www/html /var/www/moodledata \
+ && chmod -R 755 /var/www/html \
+ && chmod -R 0777 /var/www/moodledata
 
