@@ -27,7 +27,6 @@ services:
       PHP_INI-post_max_size: ${PHP_INI_post_max_size}
     volumes:
       - ./logs/apache:/var/log/apache2
-      - ./moodledata:/var/www/moodledata
     depends_on:
       - db
     networks:
