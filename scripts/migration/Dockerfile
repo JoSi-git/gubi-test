@@ -14,6 +14,8 @@ RUN apt-get update && \
 RUN git clone --branch MOODLE_401_STABLE https://github.com/moodle/moodle.git /var/www/html
 
 COPY config.php /var/www/html/config.php
+# Unser eigenes php.ini-Snippet kopieren
+COPY php.ini /usr/local/etc/php/conf.d/99-moodle.ini
 
 # Besitz- und Rechtevergabe
 RUN chown -R www-data:www-data /var/www/html /var/www/moodledata \
