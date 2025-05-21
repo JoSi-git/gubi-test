@@ -11,10 +11,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Moodle klonen (Branch anpassen nach Bedarf)
-RUN git clone --branch MOODLE_403_STABLE https://github.com/moodle/moodle.git /var/www/html
+RUN git clone --branch MOODLE_311_STABLE https://github.com/moodle/moodle.git /var/www/html
 
 # Besitz- und Rechtevergabe
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
 
-# (Optional) Env-Variablen, weitere Konfiguration, etc.
