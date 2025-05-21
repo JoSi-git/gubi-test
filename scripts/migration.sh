@@ -29,13 +29,6 @@ mv "$MOODLE_DIR" "$MOODLE_DIR.old"
 mv /tmp/moodle "$MOODLE_DIR"
 cp "$MOODLE_DIR.old/config.php" "$MOODLE_DIR/"
 
-# ============ OPTIONAL: PLUGINS ZURÜCKKOPIEREN ============
-echo "📦 Übernehme alte Plugins (optional)..."
-cp -r "$MOODLE_DIR.old/mod" "$MOODLE_DIR/"
-cp -r "$MOODLE_DIR.old/theme" "$MOODLE_DIR/"
-cp -r "$MOODLE_DIR.old/blocks" "$MOODLE_DIR/"
-cp -r "$MOODLE_DIR.old/course/format" "$MOODLE_DIR/course/"
-
 # ============ BERECHTIGUNGEN SETZEN ============
 echo "🔐 Setze Dateiberechtigungen..."
 chown -R www-data:www-data "$MOODLE_DIR"
