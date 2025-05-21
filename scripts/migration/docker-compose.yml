@@ -29,6 +29,22 @@ services:
       - db
     networks:
       - moodle-net
+      
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: pma-migration
+    restart: always
+    ports:
+      - "8081:80"                               # Du erreichst phpMyAdmin auf http://localhost:8081
+    environment:
+      PMA_HOST: db                              # muss genau dem Service-Namen Deiner MariaDB entsprechen
+      PMA_PORT: 3306
+      PMA_USER: ${MYSQL_USER}                   # optional, kannst Du freilassen und beim Login manuell eingeben
+      PMA_PASSWORD: ${MYSQL_PASSWORD}           # dito
+    depends_on:
+      - db
+    networks:
+      - moodle-net
 
 volumes:
   db_data:
