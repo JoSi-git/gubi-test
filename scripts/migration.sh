@@ -31,7 +31,7 @@ if [[ -f "$ENV_FILE" ]]; then
     source "$ENV_FILE"
     print_cmsg ".env file found and loaded." | tee -a "$LOG_FILE"
 else
-    print_cmsg ".env file found in $SCRIPT_DIR/Docker. Exiting." | tee -a "$LOG_FILE"
+    print_cmsg ".env file found in $SCRIPT_DIR/migration. Exiting." | tee -a "$LOG_FILE"
     exit 1
 fi
 
