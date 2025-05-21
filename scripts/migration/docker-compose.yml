@@ -12,6 +12,7 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
       - db_data:/var/lib/mysql
+      - ./dumps:/docker-entrypoint-initdb.d
 
   moodle:
     build: .
