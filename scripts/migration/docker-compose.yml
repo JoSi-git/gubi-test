@@ -24,7 +24,6 @@ services:
       PHP_INI-upload_max_filesize: ${PHP_INI_upload_max_filesize}
       PHP_INI-post_max_size: ${PHP_INI_post_max_size}
     volumes:
-      - ./moodle:/var/www/html
       - ./moodledata:/var/www/moodledata
     depends_on:
       - db
