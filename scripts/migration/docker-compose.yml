@@ -21,10 +21,12 @@ services:
     container_name: moodle-migration
     restart: always
     ports:
-      - "8088:80"
+      - "80:80"
     environment:
       PHP_INI-upload_max_filesize: ${PHP_INI_upload_max_filesize}
       PHP_INI-post_max_size: ${PHP_INI_post_max_size}
+    volumes:
+      - ./logs/apache:/var/log/apache2
     depends_on:
       - db
     networks:
