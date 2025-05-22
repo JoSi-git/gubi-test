@@ -1,0 +1,1 @@
+docker exec -u www-data moodle-migration php /var/www/html/admin/cli/upgrade.php --non-interactive
