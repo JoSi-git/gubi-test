@@ -36,6 +36,8 @@ docker compose down
 ##########################
 # replace moodle version
 sed -i 's/--branch MOODLE_402_STABLE/--branch MOODLE_500_STABLE/' Dockerfile
+# replace mariadb version
+sed -i 's|image: mariadb:10\.6|image: mariadb:10.11|' docker-compose.yml
 # rebuild docker image
 docker build -t migration-moodle:latest --no-cache -f Dockerfile .
 # restart container
