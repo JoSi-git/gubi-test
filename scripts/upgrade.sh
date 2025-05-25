@@ -1,26 +1,42 @@
 cd /opt/moodle-docker/migration
+###########################
+# upgrade to versuion 401 #
+###########################
 
+# start container
 docker compose up -d
-
-
+# upgrade database
 docker exec -u www-data moodle-migration php /var/www/html/admin/cli/upgrade.php --non-interactive
 # docker compose down
 docker compose down
 
-# docker image git clone moodle version ändern mit sed
-# 1) Branch austauschen
-sed -i 's/--branch MOODLE_402_STABLE/--branch MOODLE_500_STABLE/' Dockerfile
+##########################
+# upgrade to version 402 #
+##########################
 
-# apache version ändern
-sed -i 's|^FROM moodlehq/moodle-php-apache:7\.4|FROM moodlehq/moodle-php-apache:8.2|' Dockerfile
-
-# 2) Image neu bauen (ohne Cache, um sicherzugehen)
+# replace moodle version
+sed -i 's/--branch MOODLE_401_STABLE/--branch MOODLE_402_STABLE/' Dockerfile
+# rebuild docker image
 docker build -t migration-moodle:latest --no-cache -f Dockerfile .
-
-
-# 3) Container neu starten
+# restart container
 docker compose up -d
-
-
+# upgrade database
 docker exec -u www-data moodle-migration php /var/www/html/admin/cli/upgrade.php --non-interactive
+# docker compose down
+docker compose down
 
+##########################
+# upgrade to version 500 #
+##########################
+# replace moodle version
+sed -i 's/--branch MOODLE_402_STABLE/--branch MOODLE_500_STABLE/' Dockerfile
+# replace apache version
+sed -i 's|^FROM moodlehq/moodle-php-apache:7\.4|FROM moodlehq/moodle-php-apache:8.2|' Dockerfile
+# rebuild docker image
+docker build -t migration-moodle:latest --no-cache -f Dockerfile .
+# restart container
+docker compose up -d
+# upgrade database
+docker exec -u www-data moodle-migration php /var/www/html/admin/cli/upgrade.php --non-interactive
+# docker compose down
+docker compose down
