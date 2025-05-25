@@ -17,6 +17,8 @@ docker compose down
 
 # replace moodle version
 sed -i 's/--branch MOODLE_401_STABLE/--branch MOODLE_402_STABLE/' Dockerfile
+# replace apache version
+sed -i 's|^FROM moodlehq/moodle-php-apache:7\.4|FROM moodlehq/moodle-php-apache:8.2|' Dockerfile
 # rebuild docker image
 docker build -t migration-moodle:latest --no-cache -f Dockerfile .
 # restart container
@@ -32,8 +34,6 @@ docker compose down
 ##########################
 # replace moodle version
 sed -i 's/--branch MOODLE_402_STABLE/--branch MOODLE_500_STABLE/' Dockerfile
-# replace apache version
-sed -i 's|^FROM moodlehq/moodle-php-apache:7\.4|FROM moodlehq/moodle-php-apache:8.2|' Dockerfile
 # rebuild docker image
 docker build -t migration-moodle:latest --no-cache -f Dockerfile .
 # restart container
