@@ -41,5 +41,3 @@ docker compose up -d
 # upgrade database
 echo "upgrade moodle to 500"
 docker exec -u www-data moodle-migration php /var/www/html/admin/cli/upgrade.php --non-interactive
-# docker compose down
-docker compose down
