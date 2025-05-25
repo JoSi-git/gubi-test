@@ -7,7 +7,7 @@ cd /opt/moodle-docker/migration
 docker compose up -d
 # upgrade database
 echo "upgrade moodle to 401. waiting..."
-wait 5
+sleep 5
 docker exec -u www-data moodle-migration php /var/www/html/admin/cli/upgrade.php --non-interactive
 # docker compose down
 docker compose down
@@ -26,7 +26,7 @@ docker build -t migration-moodle:latest --no-cache -f Dockerfile .
 docker compose up -d
 # upgrade database
 echo "upgrade moodle to 402, waiting..."
-wait 5
+sleep 5
 docker exec -u www-data moodle-migration php /var/www/html/admin/cli/upgrade.php --non-interactive
 # docker compose down
 docker compose down
@@ -42,5 +42,5 @@ docker build -t migration-moodle:latest --no-cache -f Dockerfile .
 docker compose up -d
 # upgrade database
 echo "upgrade moodle to 500, waiting..."
-wait 5
+sleep 5
 docker exec -u www-data moodle-migration php /var/www/html/admin/cli/upgrade.php --non-interactive
