@@ -11,7 +11,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Moodle klonen (Branch anpassen nach Bedarf)
-RUN git clone --branch MOODLE_401_STABLE https://github.com/moodle/moodle.git /var/www/html
+RUN git clone --branch MOODLE_402_STABLE https://github.com/moodle/moodle.git /var/www/html
 
 COPY config.php /var/www/html/config.php
 # Unser eigenes php.ini-Snippet kopieren

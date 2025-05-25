@@ -9,7 +9,7 @@ docker compose down
 
 # docker image git clone moodle version ändern mit sed
 # 1) Branch austauschen
-sed -i 's/--branch MOODLE_401_STABLE/--branch MOODLE_500_STABLE/' Dockerfile
+sed -i 's/--branch MOODLE_402_STABLE/--branch MOODLE_500_STABLE/' Dockerfile
 
 # apache version ändern
 sed -i 's|^FROM moodlehq/moodle-php-apache:7\.4|FROM moodlehq/moodle-php-apache:8.2|' Dockerfile
