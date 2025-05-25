@@ -12,7 +12,7 @@ docker compose down
 sed -i 's/--branch MOODLE_401_STABLE/--branch main/' Dockerfile
 
 # apache version ändern
-sed -i 's|^FROM moodlehq/moodle-php-apache:7\.4|FROM moodlehq/moodle-php-apache:8.1|' Dockerfile
+sed -i 's|^FROM moodlehq/moodle-php-apache:7\.4|FROM moodlehq/moodle-php-apache:8.2|' Dockerfile
 
 # 2) Image neu bauen (ohne Cache, um sicherzugehen)
 docker build -t migration-moodle:latest --no-cache -f Dockerfile .
