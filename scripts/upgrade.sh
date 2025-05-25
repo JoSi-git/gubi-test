@@ -20,3 +20,7 @@ docker build -t migration-moodle:latest --no-cache -f Dockerfile .
 
 # 3) Container neu starten
 docker compose up -d
+
+
+docker exec -u www-data moodle-migration php /var/www/html/admin/cli/upgrade.php --non-interactive
+
