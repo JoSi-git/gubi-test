@@ -40,18 +40,13 @@ print_cmsg "Copying Docker files from $SCRIPT_DIR/migration to $INSTALL_DIR..." 
 cp "$SCRIPT_DIR/migration/docker-compose.yml" "$INSTALL_DIR/"
 cp "$SCRIPT_DIR/migration/Dockerfile" "$INSTALL_DIR/"
 cp "$SCRIPT_DIR/migration/.env" "$INSTALL_DIR/"
+
+
 cp "$SCRIPT_DIR/migration/config.php" "$INSTALL_DIR/"
 cp "$SCRIPT_DIR/migration/php.ini" "$INSTALL_DIR/"
 
-
-
-# Clone Moodle repository
-
 # Moodle migration
 
-cp -r /var/www/moodledata "${INSTALL_DIR}/moodledata"
 # Mysql dump
 mysqldump -u root -p"$MYSQL_ROOT_PASSWORD" "moodle" > $INSTALL_DIR/dumps/moodle_backup.sql
 
-# Copy moodledata
-cp -r /var/www/moodledata $INSTALL_DIR

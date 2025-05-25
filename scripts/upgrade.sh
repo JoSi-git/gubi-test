@@ -12,10 +12,8 @@ docker compose down
 sed -i 's/--branch MOODLE_401_STABLE/--branch main/' Dockerfile
 
 # 2) Image neu bauen (ohne Cache, um sicherzugehen)
-docker compose build --no-cache moodle-migration
+docker build -t migration-moodle:latest --no-cache -f Dockerfile .
+
 
 # 3) Container neu starten
 docker compose up -d
-
-# docker image neu builden
-id
